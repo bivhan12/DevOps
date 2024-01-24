@@ -1,26 +1,20 @@
-pipeline {
-    agent any
-    stages {
-        stage('UnitTest') {
-            steps {
-                echo "Hello, we are learning Jekins pipeline as a code"
-                echo "Running Unitest"
-            }
-        }
-        stage('Build') {
-            steps {
-                echo "Building the code"
-            }
-        }
-        stage('DeployStaging') {
-            steps {
-                echo "Deploying to staging env"
-            }
-        }  
-        stage('DeployProd') {
-            steps {
-                echo "Deploying to prod env"
-            }
-        }    
+pipeline{
+agent any
+stages{
+  stage('Unit Test'){
+   steps{
+     echo "Hello,Myself bivhan."
+  }
+}
+  stage('Build'){
+    steps{
+      echo "we are in the build "
     }
+  }
+  stage('Final'){
+    steps{
+      echo" This is final step for the completion"
+    }
+  }
+}
 }
