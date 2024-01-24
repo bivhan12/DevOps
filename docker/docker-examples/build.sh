@@ -1,1 +1,2 @@
-docker build -t localimg:$BUILD_NUMBER .
+#!/bin/bash
+docker run -itd --name bivhan -P $BUILD_NUMBER 
