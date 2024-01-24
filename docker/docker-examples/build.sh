@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -itd --name bivhan -P 25
+docker run -itd --name bivhan -P localimg:25
